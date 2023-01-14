@@ -9,14 +9,18 @@
     list-style: none;
     box-sizing: border-box;
     text-decoration: none;
-    font-family: "Inter" sans-serif;
+    font-family: "Inter", sans-serif;
     border: 0;
 }
 
 #topo{
-    padding:0, 100px;
+    padding:0 100px;
     background-image: url('../imagens/bannergrupo9.svg');
     position: relative;
+    padding-top: 30px;
+    background-size: cover;
+    background-repeat: no-repeat;
+    padding-bottom: 95px;
 
 }
 #topo 
@@ -29,6 +33,7 @@
 #topo 
 .logo{
     margin-bottom: 80px;
+
 }
 
 #topo .conteudo h6{
@@ -97,4 +102,45 @@ font-size: 18px;
     text-align: center;
     font-weight: bold;
 
+}
+#topo form button:hover{
+    background-color: #9a064b;
+
+}
+
+@media only scren and(max-width: 1024){
+    #topo{
+        padding-left: 60px;
+        padding-right: 60px;
+    }
+    #topo{
+        right: 60px;
+    }
+
+}
+@media only screen and (max-width:768px){
+    #topo form{
+        position: initial;
+        top: initial;
+        right: initial;
+        margin-top: 26px;
+        width: 100%;
+    }
+    
+}
+@media only screen and(max-width:489px){
+    #topo{
+        padding-left: 16px;
+        padding-right: 16px;
+    }
+    #topo .conteudo{
+        width: 100%;
+    }
+    #topo .conteudo h6,
+    #topo .conteudo h1{
+        text-align: center;
+    }
+    #topo .conteudo p{
+        text-align: justify;
+    }
 }
